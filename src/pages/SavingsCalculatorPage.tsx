@@ -97,7 +97,6 @@ export function SavingsCalculatorPage() {
           { value: 'results', label: '계산 결과' },
         ]}
       >
-        <Tabs.List />
         <Tabs.Content value="products">
           <Suspense>
             <ProductList
