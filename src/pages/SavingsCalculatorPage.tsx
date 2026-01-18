@@ -90,13 +90,11 @@ export function SavingsCalculatorPage() {
       <Spacing size={24} />
       <Border height={16} />
       <Spacing size={8} />
-      <Tabs
-        defaultValue="products"
-        items={[
-          { value: 'products', label: '적금 상품' },
-          { value: 'results', label: '계산 결과' },
-        ]}
-      >
+      <Tabs defaultValue="products">
+        <Tabs.List>
+          <Tabs.Trigger value="products">적금 상품</Tabs.Trigger>
+          <Tabs.Trigger value="results">계산 결과</Tabs.Trigger>
+        </Tabs.List>
         <Tabs.Content value="products">
           <Suspense>
             <ProductList
